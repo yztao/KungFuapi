@@ -1,4 +1,4 @@
-**获取期初权益**
+## 获取期初权益<div id='get_initial_equity'></div>
 
 `context.get_initial_equity()`
 
@@ -14,7 +14,7 @@
 
 
 
-**获取静态权益**
+## 获取静态权益<div id='get_static_equity'></div>
 
 `context.get_static_equity()`
 
@@ -30,7 +30,7 @@
 
 
 
-**获取动态权益**
+## 获取动态权益<div id='get_dynamic_equity'></div>
 
 `context.get_dynamic_equity()`
 
@@ -44,7 +44,7 @@
 | -------------- | ----- | -------- |
 | dynamic_equity | float | 动态权益 |
 
-**获取累计盈亏**
+## 获取累计盈亏<div id='get_accumulated_pnl'></div>
 
 `context.get_accumulated_pnl()`
 
@@ -58,7 +58,7 @@
 | ---- | ----- | -------- |
 | pnl  | float | 累计盈亏 |
 
-**获取累计盈亏比例**
+## 获取累计盈亏比例<div id='get_accumulated_pnl_ratio'></div>
 
 `context.get_accumulated_pnl_ratio()`
 
@@ -72,7 +72,7 @@
 | ----- | ----- | ------------ |
 | ratio | float | 累计盈亏比例 |
 
-**获取日内盈亏**
+## 获取日内盈亏<div id='get_intraday_pnl'></div>
 
 `context.get_intraday_pnl()`
 
@@ -86,7 +86,7 @@
 | ---- | ----- | -------- |
 | pnl  | float | 日内盈亏 |
 
-**获取日内盈亏比例**
+## 获取日内盈亏比例<div id='get_intraday_pnl_ratio'></div>
 
 `context.get_intraday_pnl_ratio()`
 
@@ -102,7 +102,7 @@
 
 
 
-**获取合约多头总持仓量**
+## 获取合约多头总持仓量<div id='get_long_tot'></div>
 
 `context.get_long_tot(instrument_id, exchange_id)`
 
@@ -127,7 +127,7 @@
 
 
 
-**获取合约多头总可用持仓量**
+## 获取合约多头总可用持仓量<div id='get_long_tot_avail'></div>
 
 `context.get_long_tot_avail(instrument_id, exchange_id)`
 
@@ -152,7 +152,7 @@
 
 
 
-**获取合约多头总冻结持仓量**
+## 获取合约多头总冻结持仓量<div id='get_long_tot_fro'></div>
 
 `context.get_long_tot_fro(instrument_id, exchange_id)`
 
@@ -177,7 +177,7 @@
 
 
 
-**获取合约多头昨仓总持仓量**
+## 获取合约多头昨仓总持仓量<div id='get_long_yd'></div>
 
 `context.get_long_yd(instrument_id, exchange_id)`
 
