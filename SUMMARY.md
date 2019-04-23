@@ -5,12 +5,12 @@
 * [Beginner Tutorial](./tutorial/BeginnerTutorial.md)
 * 函数定义
   * [基本方法](./functions/Functions.md)
-    *  [init 初始化](#init)
-    *  [pre_run 运行前](#pre_run)
-    *  [pre_quit 退出前](#pre_quit)
-    *  [on_quote 行情信息更新](#on_quote)
-    *  [on_order 订单信息更新](#on_order)
-    *  [on_trade 成交信息更新](#on_trade)
+    *  [init 初始化](Functions.md#init)
+    *  [pre_run 运行前](Functions.md#pre_run)
+    *  [pre_quit 退出前](Functions.md#pre_quit)
+    *  [on_quote 行情信息更新](Functions.md#on_quote)
+    *  [on_order 订单信息更新](Functions.md#on_order)
+    *  [on_trade 成交信息更新](Functions.md#on_trade)
   * [context 提供函数](./context/LogApi.md)
     * [设置相关函数](./context/Setting.md) 
       * context.add_md(source_Id)
@@ -38,10 +38,10 @@
       * [context.get_long_tot_avail(instrument_id, exchange_id)](./context/QueryApi.md#get_long_tot_avail)
       * [context.get_long_tot_fro(instrument_id, exchange_id)](./context/QueryApi.md#get_long_tot_fro)
     * [其他函数](./context/UtilApi.md)
-  
+
 * 数据结构
   * [Quote 行情信息](./data_struct/Quote.md)
   * [Order 订单信息](./data_struct/Order.md)
   * [Trade 成交信息](./data_struct/Trade.md)
-  
+
 * [系统错误代码表](./sys_error/sys_error.md)
