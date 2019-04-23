@@ -1,0 +1,1687 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>仓位和资金管理相关函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="QueryApi.html" />
+    
+    
+    <link rel="prev" href="TradeApi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../tutorial/BeginnerTutorial.html">
+            
+                <a href="../tutorial/BeginnerTutorial.html">
+            
+                    
+                    Beginner Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html">
+            
+                    
+                    函数定义
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html">
+            
+                    
+                    基本方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html#init">
+            
+                    
+                    init 初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html#pre_run">
+            
+                    
+                    pre_run 运行前
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html#pre_quit">
+            
+                    
+                    pre_quit 退出前
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html#on_quote">
+            
+                    
+                    on_quote 行情信息更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html#on_order">
+            
+                    
+                    on_order 订单信息更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../functions/Functions.html">
+            
+                <a href="../functions/Functions.html#on_trade">
+            
+                    
+                    on_trade 成交信息更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="LogApi.html">
+            
+                <a href="LogApi.html">
+            
+                    
+                    context 提供函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="Setting.html">
+            
+                <a href="Setting.html">
+            
+                    
+                    设置相关函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" >
+            
+                <span>
+            
+                    
+                    context.add_md(source_Id)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" >
+            
+                <span>
+            
+                    
+                    context.add_account(source_id, account_id, cash_limit)
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="LogApi.html">
+            
+                <a href="LogApi.html">
+            
+                    
+                    Log 相关函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="LogApi.html">
+            
+                <a href="LogApi.html#set_log_level">
+            
+                    
+                    context.set_log_level(level) 设置Log级别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="LogApi.html">
+            
+                <a href="LogApi.html#log_info">
+            
+                    
+                    context.log_info(msg) 输出INFO级别Log信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.3" data-path="LogApi.html">
+            
+                <a href="LogApi.html#log_warn">
+            
+                    
+                    context.log_warn(msg) 输出WARN级别Log信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.4" data-path="LogApi.html">
+            
+                <a href="LogApi.html#log_error">
+            
+                    
+                    context.log_error(msg) 输出INFO级别Log信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html">
+            
+                    
+                    交易相关函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html#insert_limit_order">
+            
+                    
+                    context.insert_limit_order(instrument_id, exchange_id, account_id, volume, side, offset) 限价单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html#insert_market_order">
+            
+                    
+                    context.insert_market_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.3" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html#insert_fok_order">
+            
+                    
+                    context.insert_fok_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.4" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html#insert_fak_order">
+            
+                    
+                    context.insert_fak_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.4.1" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html#cancel_order">
+            
+                    
+                    context.cancel_order(order_id)) 市价单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.4" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html">
+            
+                    
+                    仓位和资金管理相关函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.4.1" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_initial_equity">
+            
+                    
+                    context.get_initial_equity()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.2" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_static_equity">
+            
+                    
+                    context.get_static_equity()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.3" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_dynamic_equity">
+            
+                    
+                    context.get_dynamic_equity()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.4" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_accumulated_pnl">
+            
+                    
+                    context.get_accumulated_pnl()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.5" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_accumulated_pnl_ratio">
+            
+                    
+                    context.get_accumulated_pnl_ratio()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.6" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_intraday_pnl">
+            
+                    
+                    context.get_intraday_pnl()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.7" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_intraday_pnl_ratio">
+            
+                    
+                    context.get_intraday_pnl_ratio()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.8" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_tot">
+            
+                    
+                    context.get_long_tot(instrument_id, exchange_id)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.9" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_tot_avail">
+            
+                    
+                    context.get_long_tot_avail(instrument_id, exchange_id)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.10" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_tot_fro">
+            
+                    
+                    context.get_long_tot_fro(instrument_id, exchange_id)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="UtilApi.html">
+            
+                <a href="UtilApi.html">
+            
+                    
+                    其他函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../data_struct/Quote.html">
+            
+                <a href="../data_struct/Quote.html">
+            
+                    
+                    Quote 行情信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../data_struct/Order.html">
+            
+                <a href="../data_struct/Order.html">
+            
+                    
+                    Order 订单信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../data_struct/Trade.html">
+            
+                <a href="../data_struct/Trade.html">
+            
+                    
+                    Trade 成交信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../sys_error/sys_error.html">
+            
+                <a href="../sys_error/sys_error.html">
+            
+                    
+                    系统错误代码表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >仓位和资金管理相关函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x83B7;&#x53D6;&#x671F;&#x521D;&#x6743;&#x76CA;">&#x83B7;&#x53D6;&#x671F;&#x521D;&#x6743;&#x76CA;<div id="get_initial_equity"></div></h2>
+<p><code>context.get_initial_equity()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>initial_equity</td>
+<td>float</td>
+<td>&#x671F;&#x521D;&#x6743;&#x76CA;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x9759;&#x6001;&#x6743;&#x76CA;">&#x83B7;&#x53D6;&#x9759;&#x6001;&#x6743;&#x76CA;<div id="get_static_equity"></div></h2>
+<p><code>context.get_static_equity()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>static_equity</td>
+<td>float</td>
+<td>&#x9759;&#x6001;&#x6743;&#x76CA;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x6743;&#x76CA;">&#x83B7;&#x53D6;&#x52A8;&#x6001;&#x6743;&#x76CA;<div id="get_dynamic_equity"></div></h2>
+<p><code>context.get_dynamic_equity()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dynamic_equity</td>
+<td>float</td>
+<td>&#x52A8;&#x6001;&#x6743;&#x76CA;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;">&#x83B7;&#x53D6;&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;<div id="get_accumulated_pnl"></div></h2>
+<p><code>context.get_accumulated_pnl()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pnl</td>
+<td>float</td>
+<td>&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;&#x6BD4;&#x4F8B;">&#x83B7;&#x53D6;&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;&#x6BD4;&#x4F8B;<div id="get_accumulated_pnl_ratio"></div></h2>
+<p><code>context.get_accumulated_pnl_ratio()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ratio</td>
+<td>float</td>
+<td>&#x7D2F;&#x8BA1;&#x76C8;&#x4E8F;&#x6BD4;&#x4F8B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x65E5;&#x5185;&#x76C8;&#x4E8F;">&#x83B7;&#x53D6;&#x65E5;&#x5185;&#x76C8;&#x4E8F;<div id="get_intraday_pnl"></div></h2>
+<p><code>context.get_intraday_pnl()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pnl</td>
+<td>float</td>
+<td>&#x65E5;&#x5185;&#x76C8;&#x4E8F;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x65E5;&#x5185;&#x76C8;&#x4E8F;&#x6BD4;&#x4F8B;">&#x83B7;&#x53D6;&#x65E5;&#x5185;&#x76C8;&#x4E8F;&#x6BD4;&#x4F8B;<div id="get_intraday_pnl_ratio"></div></h2>
+<p><code>context.get_intraday_pnl_ratio()</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<p>&#x65E0;</p>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ratio</td>
+<td>float</td>
+<td>&#x65E5;&#x5185;&#x76C8;&#x4E8F;&#x6BD4;&#x4F8B;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x603B;&#x6301;&#x4ED3;&#x91CF;">&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x603B;&#x6301;&#x4ED3;&#x91CF;<div id="get_long_tot"></div></h2>
+<p><code>context.get_long_tot(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_tot(&quot;600000&quot;, Exchange.SSE)</code></p>
+<h2 id="&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x603B;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;">&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x603B;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;<div id="get_long_tot_avail"></div></h2>
+<p><code>context.get_long_tot_avail(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x603B;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_tot_avail(&quot;600000&quot;, Exchange.SSE)</code></p>
+<h2 id="&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x603B;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;">&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x603B;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;<div id="get_long_tot_fro"></div></h2>
+<p><code>context.get_long_tot_fro(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x603B;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_tot_fro(&quot;600000&quot;, Exchange.SSE)</code></p>
+<h2 id="&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x6628;&#x4ED3;&#x603B;&#x6301;&#x4ED3;&#x91CF;">&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x6628;&#x4ED3;&#x603B;&#x6301;&#x4ED3;&#x91CF;<div id="get_long_yd"></div></h2>
+<p><code>context.get_long_yd(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x6628;&#x4ED3;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_yd(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x6628;&#x4ED3;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_long_yd_avail(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x6628;&#x4ED3;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_yd_avail(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x6628;&#x4ED3;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_long_yd_fro(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x6628;&#x4ED3;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_yd_fro(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x5DF2;&#x5B9E;&#x73B0;&#x76C8;&#x4E8F;</strong></p>
+<p><code>context.get_long_realized_pnl(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pnl</td>
+<td>float</td>
+<td>&#x5DF2;&#x5B9E;&#x73B0;&#x76C8;&#x4E8F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x5DF2;&#x5B9E;&#x73B0;&#x76C8;&#x4E8F;&#xFF1A;</p>
+<p><code>context.get_long_realized_pnl(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x591A;&#x5934;&#x6D6E;&#x52A8;&#x76C8;&#x4E8F;</strong></p>
+<p><code>context.get_long_unrealized_pnl(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;&#x6D66;&#x53D1;&#x94F6;&#x884C;600000&#x6D6E;&#x52A8;&#x76C8;&#x4E8F;&#xFF1A;</p>
+<p><code>context.get_long_unrealized_pnl(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x603B;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_short_tot(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1906&#x7A7A;&#x5934;&#x603B;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_short_tot(&quot;rb1906&quot;, Exchange.SHFE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x603B;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_short_tot_avail(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x7A7A;&#x5934;&#x603B;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_tot_avail(&quot;rb1905&quot;, Exchange.SHFE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x603B;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_short_tot_fro(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x7A7A;&#x5934;&#x603B;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_short_tot_fro(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x6628;&#x4ED3;&#x603B;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_short_yd(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x7A7A;&#x5934;&#x6628;&#x4ED3;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_short_yd(&quot;600000&quot;, Exchange.SHFE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x6628;&#x4ED3;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_short_yd_avail(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x7A7A;&#x5934;&#x6628;&#x4ED3;&#x53EF;&#x7528;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_short_yd_avail(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x6628;&#x4ED3;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;</strong></p>
+<p><code>context.get_short_yd_fro(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>volume</td>
+<td>int</td>
+<td>&#x6301;&#x4ED3;&#x6570;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x7A7A;&#x5934;&#x6628;&#x4ED3;&#x51BB;&#x7ED3;&#x6301;&#x4ED3;&#x91CF;&#xFF1A;</p>
+<p><code>context.get_long_yd_fro(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x5DF2;&#x5B9E;&#x73B0;&#x76C8;&#x4E8F;</strong></p>
+<p><code>context.get_short_realized_pnl(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pnl</td>
+<td>float</td>
+<td>&#x5DF2;&#x5B9E;&#x73B0;&#x76C8;&#x4E8F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x5DF2;&#x5B9E;&#x73B0;&#x76C8;&#x4E8F;&#xFF1A;</p>
+<p><code>context.get_short_realized_pnl(&quot;600000&quot;, Exchange.SSE)</code></p>
+<p><strong>&#x83B7;&#x53D6;&#x5408;&#x7EA6;&#x7A7A;&#x5934;&#x6D6E;&#x52A8;&#x76C8;&#x4E8F;</strong></p>
+<p><code>context.get_short_unrealized_pnl(instrument_id, exchange_id)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instrument_id</td>
+<td>str</td>
+<td>&#x5408;&#x7EA6;ID</td>
+</tr>
+<tr>
+<td>exchange_id</td>
+<td>str</td>
+<td>&#x4EA4;&#x6613;&#x6240;ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD4;&#x56DE;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pnl</td>
+<td>float</td>
+<td>&#x7A7A;&#x5934;&#x6D6E;&#x52A8;&#x76C8;&#x4E8F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8303;&#x4F8B;</strong></p>
+<p>&#x83B7;&#x53D6;&#x7B56;&#x7565;rb1905&#x6D6E;&#x52A8;&#x76C8;&#x4E8F;&#xFF1A;</p>
+<p><code>context.get_short_unrealized_pnl(&quot;600000&quot;, Exchange.SSE)</code></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="TradeApi.html#cancel_order" class="navigation navigation-prev " aria-label="Previous page: context.cancel_order(order_id)) 市价单">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="QueryApi.html#get_initial_equity" class="navigation navigation-next " aria-label="Next page: context.get_initial_equity()">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"仓位和资金管理相关函数","level":"1.3.2.4","depth":3,"next":{"title":"context.get_initial_equity()","level":"1.3.2.4.1","depth":4,"anchor":"#get_initial_equity","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_initial_equity","articles":[]},"previous":{"title":"context.cancel_order(order_id)) 市价单","level":"1.3.2.3.4.1","depth":5,"anchor":"#cancel_order","path":"context/TradeApi.md","ref":"./context/TradeApi.md#cancel_order","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/QueryApi.md","mtime":"2019-04-23T05:25:26.957Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-23T06:11:47.228Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

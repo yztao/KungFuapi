@@ -4,13 +4,13 @@
 
 * [Beginner Tutorial](./tutorial/BeginnerTutorial.md)
 * 函数定义
-  * [基本方法](./functions/Functions.md)
-    *  [init 初始化](Functions.md#init)
-    *  [pre_run 运行前](Functions.md#pre_run)
-    *  [pre_quit 退出前](Functions.md#pre_quit)
-    *  [on_quote 行情信息更新](Functions.md#on_quote)
-    *  [on_order 订单信息更新](Functions.md#on_order)
-    *  [on_trade 成交信息更新](Functions.md#on_trade)
+  * 基本方法
+    *  [init 初始化](./functions/init.md)
+    *  [pre_run 运行前](./functions/pre_run.md)
+    *  [pre_quit 退出前](./functions/pre_quit.md)
+    *  [on_quote 行情信息更新](./functions/on_quote.md)
+    *  [on_order 订单信息更新](./functions/on_order.md)
+    *  [on_trade 成交信息更新](./functions/on_trade.md)
   * [context 提供函数](./context/LogApi.md)
     * [设置相关函数](./context/Setting.md) 
       * context.add_md(source_Id)
