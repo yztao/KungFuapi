@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 
 * [Beginner Tutorial](./tutorial/BeginnerTutorial.md)
-* [函数定义](./functions/Functions.md)
+* 函数定义
   * 基本方法
     *  [init 初始化](./functions/Functions.md#init)
     *  [pre_run 运行前](./functions/Functions.md#pre_run)
