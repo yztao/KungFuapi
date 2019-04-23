@@ -6,7 +6,7 @@
 * 函数定义
   * 基本方法
     *  [init 初始化](./functions/Functions.md#init)
-    *  [pre_run 运行前](./functions/Functions.md#pre_run)
+    *  [pre_run 运行前](#pre_run)
     *  [pre_quit 退出前](./functions/Functions.md#pre_quit)
     *  [on_quote 行情信息更新](./functions/Functions.md#on_quote)
     *  [on_order 订单信息更新](./functions/Functions.md#on_order)
