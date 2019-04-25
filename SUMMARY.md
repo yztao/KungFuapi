@@ -5,7 +5,7 @@
 
 - 函数定义
   - 基本方法
-    - init 初始化](./functions/init.md)
+    - [init 初始化](./functions/init.md)
     - [pre_run 运行前](./functions/pre_run.md)
     - [pre_quit 退出前](./functions/pre_quit.md)
     - [on_quote 行情信息更新](./functions/on_quote.md)
@@ -56,4 +56,3 @@
   - [Order 订单信息](./data_struct/Order.md)
   - [Trade 成交信息](./data_struct/Trade.md)
 - [系统错误代码表](./sys_error/sys_error.md)
-
