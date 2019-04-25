@@ -1,4 +1,4 @@
-## `pre_quit(context)`<div id='pre_quit'></div>
+## `pre_quit(context)`
 
 > 退出前方法。
 

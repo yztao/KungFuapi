@@ -1,4 +1,4 @@
-## `pre_run(context)`<div id='pre_run'></div>
+## `pre_run(context)`
 
 > 运行前方法。
 

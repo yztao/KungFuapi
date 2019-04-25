@@ -1,4 +1,4 @@
-## `on_order(context, order)`<div id='on_order'></div>
+## `on_order(context, order)`
 
 > 订单信息的更新会自动触发该方法的调用。
 

@@ -1,4 +1,4 @@
-## `on_trade(context, trade)`<div id='on_trade'></div>
+## `on_trade(context, trade)`
 
 > 策略订单成效信息的更新会自动触发该方法的调用。
 

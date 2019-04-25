@@ -1,4 +1,4 @@
-## `on_quote(context, quote)`<div id='on_quote'></div>
+## `on_quote(context, quote)`
 
 > 行情数据的推送会自动触发该方法的调用。
 

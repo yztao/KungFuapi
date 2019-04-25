@@ -1,4 +1,4 @@
-## `init(context)`<div id='init'></div>
+## `init(context)`
 
 > 初始化方法，在启动时候会触发一次。策略使用这个方法来做各种初始化设置。
 
