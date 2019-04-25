@@ -65,6 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Setting.html" />
+    
     
     <link rel="prev" href="LogApi.html" />
     
@@ -257,30 +259,35 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.3.2.1.1" >
-            
-                <span>
-            
-                    
-                    context.add_md(source_Id)
-            
-                </span>
-            
 
+            </ul>
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.1.2" >
+        <li class="chapter " data-level="1.3.3" data-path="Setting.html">
             
-                <span>
+                <a href="Setting.html#add_md">
             
                     
-                    context.add_account(source_id, account_id, cash_limit)
+                    context.add_md(source_Id) 添加行情源
             
-                </span>
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="Setting.html">
+            
+                <a href="Setting.html#add_account">
+            
+                    
+                    context.add_account(source_id, account_id, cash_limit) 添加交易账户
+            
+                </a>
             
 
             
@@ -291,7 +298,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.2" data-path="LogApi.html">
+        <li class="chapter " data-level="1.3.4" data-path="LogApi.html">
             
                 <a href="LogApi.html">
             
@@ -305,7 +312,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.2.2.1" data-path="LogApi.html">
+        <li class="chapter " data-level="1.3.4.1" data-path="LogApi.html">
             
                 <a href="LogApi.html#set_log_level">
             
@@ -318,7 +325,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.2.2" data-path="LogApi.html">
+        <li class="chapter " data-level="1.3.4.2" data-path="LogApi.html">
             
                 <a href="LogApi.html#log_info">
             
@@ -329,9 +336,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.3.2.2.3" data-path="LogApi.html">
+        <li class="chapter " data-level="1.3.4.2.1" data-path="LogApi.html">
             
                 <a href="LogApi.html#log_warn">
             
@@ -344,7 +352,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.2.4" data-path="LogApi.html">
+        <li class="chapter " data-level="1.3.4.2.2" data-path="LogApi.html">
             
                 <a href="LogApi.html#log_error">
             
@@ -362,7 +370,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.3" data-path="TradeApi.html">
+        <li class="chapter " data-level="1.3.4.3" data-path="TradeApi.html">
             
                 <a href="TradeApi.html">
             
@@ -376,7 +384,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.2.3.1" data-path="TradeApi.html">
+        <li class="chapter " data-level="1.3.4.3.1" data-path="TradeApi.html">
             
                 <a href="TradeApi.html#insert_limit_order">
             
@@ -389,7 +397,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.3.2" data-path="TradeApi.html">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="TradeApi.html">
             
                 <a href="TradeApi.html#insert_market_order">
             
@@ -400,27 +413,15 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.3.2.3.3" data-path="TradeApi.html">
+        <li class="chapter " data-level="1.3.4.4.1" data-path="TradeApi.html">
             
                 <a href="TradeApi.html#insert_fok_order">
             
                     
-                    context.insert_fok_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.2.3.4" data-path="TradeApi.html">
-            
-                <a href="TradeApi.html#insert_fak_order">
-            
-                    
-                    context.insert_fak_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单
+                    context.insert_fok_order(instrument_id, exchange_id, account_id, volume, side, offset) FOK单
             
                 </a>
             
@@ -429,12 +430,25 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.2.3.4.1" data-path="TradeApi.html">
+        <li class="chapter " data-level="1.3.4.4.1.1" data-path="TradeApi.html">
+            
+                <a href="TradeApi.html#insert_fak_order">
+            
+                    
+                    context.insert_fak_order(instrument_id, exchange_id, account_id, volume, side, offset) FAK单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4.1.2" data-path="TradeApi.html">
             
                 <a href="TradeApi.html#cancel_order">
             
                     
-                    context.cancel_order(order_id)) 市价单
+                    context.cancel_order(order_id)) 撤单
             
                 </a>
             
@@ -452,7 +466,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.4.5" data-path="QueryApi.html">
             
                 <a href="QueryApi.html">
             
@@ -463,15 +477,19 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="1.3.2.4.1" data-path="QueryApi.html">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_initial_equity">
             
                     
-                    context.get_initial_equity()
+                    context.get_initial_equity() 获取期初权益
             
                 </a>
             
@@ -479,12 +497,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.2" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.6" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_static_equity">
             
                     
-                    context.get_static_equity()
+                    context.get_static_equity() 获取静态权益
             
                 </a>
             
@@ -492,12 +510,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.3" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.7" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_dynamic_equity">
             
                     
-                    context.get_dynamic_equity()
+                    context.get_dynamic_equity() 获取动态权益
             
                 </a>
             
@@ -505,12 +523,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.4" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.8" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_accumulated_pnl">
             
                     
-                    context.get_accumulated_pnl()
+                    context.get_accumulated_pnl() 获取累计盈亏
             
                 </a>
             
@@ -518,12 +536,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.5" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.9" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_accumulated_pnl_ratio">
             
                     
-                    context.get_accumulated_pnl_ratio()
+                    context.get_accumulated_pnl_ratio() 获取累计盈亏比例
             
                 </a>
             
@@ -531,12 +549,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.6" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.10" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_intraday_pnl">
             
                     
-                    context.get_intraday_pnl()
+                    context.get_intraday_pnl() 获取日内盈亏
             
                 </a>
             
@@ -544,12 +562,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.7" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.11" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_intraday_pnl_ratio">
             
                     
-                    context.get_intraday_pnl_ratio()
+                    context.get_intraday_pnl_ratio() 获取日内盈亏比例
             
                 </a>
             
@@ -557,12 +575,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.8" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.12" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_long_tot">
             
                     
-                    context.get_long_tot(instrument_id, exchange_id)
+                    context.get_long_tot(instrument_id, exchange_id) 获取多头总持仓
             
                 </a>
             
@@ -570,12 +588,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.9" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.13" data-path="QueryApi.html">
             
                 <a href="QueryApi.html#get_long_tot_avail">
             
                     
-                    context.get_long_tot_avail(instrument_id, exchange_id)
+                    context.get_long_tot_avail(instrument_id, exchange_id) 获取多头总可用持仓
             
                 </a>
             
@@ -583,12 +601,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2.4.10" data-path="QueryApi.html">
+        <li class="chapter " data-level="1.3.14" data-path="QueryApi.html">
             
-                <a href="QueryApi.html#get_long_tot_fro">
+                <a href="QueryApi.html#get_long_tot_frozen">
             
                     
-                    context.get_long_tot_fro(instrument_id, exchange_id)
+                    context.get_long_tot_frozen(instrument_id, exchange_id) 获取多头总冻结持仓
             
                 </a>
             
@@ -596,17 +614,77 @@
             
         </li>
     
-
-            </ul>
+        <li class="chapter " data-level="1.3.15" data-path="QueryApi.html">
             
-        </li>
-    
-        <li class="chapter " data-level="1.3.2.5" data-path="UtilApi.html">
-            
-                <a href="UtilApi.html">
+                <a href="QueryApi.html#get_long_yd">
             
                     
-                    其他函数
+                    context.get_long_yd(instrument_id, exchange_id) 获取合约多头昨仓持仓量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_yd_avail">
+            
+                    
+                    context.get_long_yd_avail(instrument_id, exchange_id) 获取合约多头昨仓可用持仓量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_yd_frozen">
+            
+                    
+                    context.get_long_yd_frozen(instrument_id, exchange_id) 获取合约多头昨仓冻结持仓量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_realized_pnl">
+            
+                    
+                    context.get_long_realized_pnl(instrument_id, exchange_id) 获取合约多头已实现盈亏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_long_unrealized_pnl">
+            
+                    
+                    context.get_long_unrealized_pnl(instrument_id, exchange_id) 获取合约多头未实现盈亏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.20" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_tot">
+            
+                    
+                    context.get_short_tot(instrument_id, exchange_id) 获取空头总持仓
             
                 </a>
             
@@ -619,12 +697,105 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_tot_avail">
+            
+                    
+                    context.get_short_tot_avail(instrument_id, exchange_id) 获取空头总可用持仓
+            
+                </a>
+            
 
-            </ul>
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter " data-level="1.5" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_tot_frozen">
+            
+                    
+                    context.get_short_tot_frozen(instrument_id, exchange_id) 获取空头总冻结持仓
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_yd">
+            
+                    
+                    context.get_short_yd(instrument_id, exchange_id) 获取合约空头昨仓持仓量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_yd_avail">
+            
+                    
+                    context.get_short_yd_avail(instrument_id, exchange_id) 获取合约空头昨仓可用持仓量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_yd_frozen">
+            
+                    
+                    context.get_short_yd_frozen(instrument_id, exchange_id) 获取合约空头昨仓冻结持仓量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_realized_pnl">
+            
+                    
+                    context.get_short_realized_pnl(instrument_id, exchange_id) 获取合约空头已实现盈亏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="QueryApi.html">
+            
+                <a href="QueryApi.html#get_short_unrealized_pnl">
+            
+                    
+                    context.get_short_unrealized_pnl(instrument_id, exchange_id) 获取合约空头未实现盈亏
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
             
                 <span>
             
@@ -638,7 +809,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../data_struct/Quote.html">
+        <li class="chapter " data-level="2.1.1" data-path="../data_struct/Quote.html">
             
                 <a href="../data_struct/Quote.html">
             
@@ -651,7 +822,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../data_struct/Order.html">
+        <li class="chapter " data-level="2.1.2" data-path="../data_struct/Order.html">
             
                 <a href="../data_struct/Order.html">
             
@@ -664,7 +835,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../data_struct/Trade.html">
+        <li class="chapter " data-level="2.1.3" data-path="../data_struct/Trade.html">
             
                 <a href="../data_struct/Trade.html">
             
@@ -682,7 +853,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../sys_error/sys_error.html">
+        <li class="chapter " data-level="2.2" data-path="../sys_error/sys_error.html">
             
                 <a href="../sys_error/sys_error.html">
             
@@ -740,7 +911,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><strong>&#x7B56;&#x7565;&#x57FA;&#x672C;&#x8BBE;&#x7F6E;</strong></p>
+                                <h2 id="&#x6DFB;&#x52A0;&#x884C;&#x60C5;&#x6E90;">&#x6DFB;&#x52A0;&#x884C;&#x60C5;&#x6E90;<div id="add_md"></div></h2>
 <p><code>context.add_md(source_id)</code></p>
 <p><strong>&#x53C2;&#x6570;</strong></p>
 <table>
@@ -753,75 +924,40 @@
 </thead>
 <tbody>
 <tr>
-<td>level</td>
-<td>int</td>
-<td>log &#x7EA7;&#x522B;</td>
+<td>source_id</td>
+<td>str</td>
+<td>&#x884C;&#x60C5;&#x67DC;&#x53F0;ID</td>
 </tr>
 </tbody>
 </table>
 <p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
-<p><strong>&#x8F93;&#x51FA; INFO &#x7EA7;&#x522B; Log &#x4FE1;&#x606F;</strong></p>
-<p><code>context.log_info(msg)</code></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
 <table>
 <thead>
 <tr>
-<th>&#x53C2;&#x6570;</th>
+<th>&#x8FD4;&#x56DE;</th>
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x8BF4;&#x660E;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>msg</td>
-<td>str</td>
-<td>Log &#x4FE1;&#x606F;</td>
+<td>result</td>
+<td>bool</td>
 </tr>
 </tbody>
 </table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
-<p><strong>&#x8F93;&#x51FA; WARN &#x7EA7;&#x522B; Log &#x4FE1;&#x606F;</strong></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>msg</td>
-<td>str</td>
-<td>Log &#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
-<p><strong>&#x8F93;&#x51FA; ERROR &#x7EA7;&#x522B; Log &#x4FE1;&#x606F;</strong></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>msg</td>
-<td>str</td>
-<td>Log &#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
+<h2 id="&#x6DFB;&#x52A0;&#x4EA4;&#x6613;&#x8D26;&#x53F7;">&#x6DFB;&#x52A0;&#x4EA4;&#x6613;&#x8D26;&#x53F7;<div id="add_account"></div></h2>
+<p><code>context.add_account(source_id, account_id, cash_limit)</code></p>
+<p><strong>&#x53C2;&#x6570;</strong>
+| &#x53C2;&#x6570; | &#x7C7B;&#x578B; | &#x8BF4;&#x660E;       |
+| ---- | ---- | ---------- |
+| source_id     | str     | &#x884C;&#x60C5;&#x67DC;&#x53F0;ID |
+| account_id     | str     | &#x8D26;&#x6237;ID |
+| cash_limit     | float     | &#x8D44;&#x91D1;&#x9650;&#x5236; |</p>
+<p><strong>&#x8FD4;&#x56DE;</strong>
+| &#x8FD4;&#x56DE;   | &#x7C7B;&#x578B; | &#x8BF4;&#x660E; |
+| ------ | ---- | ---- |
+| result | bool     |      |</p>
 
                                 
                                 </section>
@@ -849,10 +985,14 @@
 
             
                 
-                <a href="LogApi.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: context 提供函数">
+                <a href="LogApi.html" class="navigation navigation-prev " aria-label="Previous page: context 提供函数">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Setting.html#add_md" class="navigation navigation-next " aria-label="Next page: context.add_md(source_Id) 添加行情源">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -861,7 +1001,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"设置相关函数","level":"1.3.2.1","depth":3,"next":{"title":"context.add_md(source_Id)","level":"1.3.2.1.1","depth":4,"ref":"","articles":[]},"previous":{"title":"context 提供函数","level":"1.3.2","depth":2,"path":"context/LogApi.md","ref":"./context/LogApi.md","articles":[{"title":"设置相关函数","level":"1.3.2.1","depth":3,"path":"context/Setting.md","ref":"./context/Setting.md","articles":[{"title":"context.add_md(source_Id)","level":"1.3.2.1.1","depth":4,"ref":"","articles":[]},{"title":"context.add_account(source_id, account_id, cash_limit)","level":"1.3.2.1.2","depth":4,"ref":"","articles":[]}]},{"title":"Log 相关函数","level":"1.3.2.2","depth":3,"path":"context/LogApi.md","ref":"./context/LogApi.md","articles":[{"title":"context.set_log_level(level) 设置Log级别","level":"1.3.2.2.1","depth":4,"anchor":"#set_log_level","path":"context/LogApi.md","ref":"./context/LogApi.md#set_log_level","articles":[]},{"title":"context.log_info(msg) 输出INFO级别Log信息","level":"1.3.2.2.2","depth":4,"anchor":"#log_info","path":"context/LogApi.md","ref":"./context/LogApi.md#log_info","articles":[]},{"title":"context.log_warn(msg) 输出WARN级别Log信息","level":"1.3.2.2.3","depth":4,"anchor":"#log_warn","path":"context/LogApi.md","ref":"./context/LogApi.md#log_warn","articles":[]},{"title":"context.log_error(msg) 输出INFO级别Log信息","level":"1.3.2.2.4","depth":4,"anchor":"#log_error","path":"context/LogApi.md","ref":"./context/LogApi.md#log_error","articles":[]}]},{"title":"交易相关函数","level":"1.3.2.3","depth":3,"path":"context/TradeApi.md","ref":"./context/TradeApi.md","articles":[{"title":"context.insert_limit_order(instrument_id, exchange_id, account_id, volume, side, offset) 限价单","level":"1.3.2.3.1","depth":4,"anchor":"#insert_limit_order","path":"context/TradeApi.md","ref":"./context/TradeApi.md#insert_limit_order","articles":[]},{"title":"context.insert_market_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单","level":"1.3.2.3.2","depth":4,"anchor":"#insert_market_order","path":"context/TradeApi.md","ref":"./context/TradeApi.md#insert_market_order","articles":[]},{"title":"context.insert_fok_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单","level":"1.3.2.3.3","depth":4,"anchor":"#insert_fok_order","path":"context/TradeApi.md","ref":"./context/TradeApi.md#insert_fok_order","articles":[]},{"title":"context.insert_fak_order(instrument_id, exchange_id, account_id, volume, side, offset) 市价单","level":"1.3.2.3.4","depth":4,"anchor":"#insert_fak_order","path":"context/TradeApi.md","ref":"./context/TradeApi.md#insert_fak_order","articles":[{"title":"context.cancel_order(order_id)) 市价单","level":"1.3.2.3.4.1","depth":5,"anchor":"#cancel_order","path":"context/TradeApi.md","ref":"./context/TradeApi.md#cancel_order","articles":[]}]}]},{"title":"仓位和资金管理相关函数","level":"1.3.2.4","depth":3,"path":"context/QueryApi.md","ref":"./context/QueryApi.md","articles":[{"title":"context.get_initial_equity()","level":"1.3.2.4.1","depth":4,"anchor":"#get_initial_equity","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_initial_equity","articles":[]},{"title":"context.get_static_equity()","level":"1.3.2.4.2","depth":4,"anchor":"#get_static_equity","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_static_equity","articles":[]},{"title":"context.get_dynamic_equity()","level":"1.3.2.4.3","depth":4,"anchor":"#get_dynamic_equity","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_dynamic_equity","articles":[]},{"title":"context.get_accumulated_pnl()","level":"1.3.2.4.4","depth":4,"anchor":"#get_accumulated_pnl","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_accumulated_pnl","articles":[]},{"title":"context.get_accumulated_pnl_ratio()","level":"1.3.2.4.5","depth":4,"anchor":"#get_accumulated_pnl_ratio","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_accumulated_pnl_ratio","articles":[]},{"title":"context.get_intraday_pnl()","level":"1.3.2.4.6","depth":4,"anchor":"#get_intraday_pnl","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_intraday_pnl","articles":[]},{"title":"context.get_intraday_pnl_ratio()","level":"1.3.2.4.7","depth":4,"anchor":"#get_intraday_pnl_ratio","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_intraday_pnl_ratio","articles":[]},{"title":"context.get_long_tot(instrument_id, exchange_id)","level":"1.3.2.4.8","depth":4,"anchor":"#get_long_tot","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_long_tot","articles":[]},{"title":"context.get_long_tot_avail(instrument_id, exchange_id)","level":"1.3.2.4.9","depth":4,"anchor":"#get_long_tot_avail","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_long_tot_avail","articles":[]},{"title":"context.get_long_tot_fro(instrument_id, exchange_id)","level":"1.3.2.4.10","depth":4,"anchor":"#get_long_tot_fro","path":"context/QueryApi.md","ref":"./context/QueryApi.md#get_long_tot_fro","articles":[]}]},{"title":"其他函数","level":"1.3.2.5","depth":3,"path":"context/UtilApi.md","ref":"./context/UtilApi.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/Setting.md","mtime":"2019-04-23T05:25:26.958Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-23T06:11:47.228Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"设置相关函数","level":"1.3.2.1","depth":3,"next":{"title":"context.add_md(source_Id) 添加行情源","level":"1.3.3","depth":2,"anchor":"#add_md","path":"context/Setting.md","ref":"./context/Setting.md#add_md","articles":[{"title":"context.add_account(source_id, account_id, cash_limit) 添加交易账户","level":"1.3.3.1","depth":3,"anchor":"#add_account","path":"context/Setting.md","ref":"./context/Setting.md#add_account","articles":[]}]},"previous":{"title":"context 提供函数","level":"1.3.2","depth":2,"path":"context/LogApi.md","ref":"./context/LogApi.md","articles":[{"title":"设置相关函数","level":"1.3.2.1","depth":3,"path":"context/Setting.md","ref":"./context/Setting.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/Setting.md","mtime":"2019-04-24T02:47:57.934Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-24T02:48:11.579Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

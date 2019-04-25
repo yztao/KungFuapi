@@ -1,5 +1,6 @@
-## `限价单`<div id='insert_limit_order'></div>
-`context.insert_limit_order(instrument_id, exchange_id, account_id,limit_price, volume, side, offset)`
+**限价单**
+
+`context.insert_limit_order(instrument_id, exchange_id, account_id, volume, side, offset)`
 
 **参数**
 
@@ -30,7 +31,9 @@
 `context.insert_limit_order("rb1906", Exchange.SHFE, "acc_2", 3500.0, 2, Side.Buy, Offset.Open)`
 
 
-## `市价单`<div id='insert_market_order'></div>
+
+**市价单**
+
 `context.insert_market_order(instrument_id, exchange_id, account_id, volume, side, offset)`
 
 **参数**
@@ -62,7 +65,8 @@
 >
 > 不同交易所市价单撮合规则不同，上交所和深交所可以指定不同价格类型的市价单，目前功夫采用最优五档即时成交转撤销。
 
-## `FOK 单`<div id='insert_fok_order'></div>
+**FOK 订单**
+
 `context.insert_fok_order(instrument_id, exchange_id, account_id, limit_price, volume, side, offset)`
 
 **参数**
@@ -97,7 +101,8 @@
 
 
 
-## `FAK 单`<div id='insert_fak_order'></div>
+**FAK 订单**
+
 `context.insert_fak_order(instrument_id, exchange_id, account_id, limit_price, volume, side, offset)`
 
 **参数**
@@ -132,7 +137,8 @@
 
 
 
-## `撤单`<div id='cancel_order'></div>
+**撤单**
+
 `context.cancel_order(order_id)`
 
 **参数**

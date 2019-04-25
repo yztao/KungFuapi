@@ -1,52 +1,33 @@
-**策略基本设置**
+## 添加行情源<div id='add_md'></div>
 
 `context.add_md(source_id)`
 
 **参数**
 
-| 参数  | 类型 | 说明     |
-| ----- | ---- | -------- |
-| level | int  | log 级别 |
+| 参数 | 类型 | 说明       |
+| ---- | ---- | ---------- |
+| source_id     | str     | 行情柜台ID |
 
 **返回**
 
-无
+| 返回   | 类型 | 说明 |
+| ------ | ---- | ---- |
+| result | bool     |      |
 
-**输出 INFO 级别 Log 信息**
+## 添加交易账号<div id='add_account'></div>
 
-`context.log_info(msg)`
+`context.add_account(source_id, account_id, cash_limit)`
 
 **参数**
-
-| 参数 | 类型 | 说明     |
-| ---- | ---- | -------- |
-| msg  | str  | Log 信息 |
-
-**返回**
-
-无
-
-**输出 WARN 级别 Log 信息**
-
-**参数**
-
-| 参数 | 类型 | 说明     |
-| ---- | ---- | -------- |
-| msg  | str  | Log 信息 |
+| 参数 | 类型 | 说明       |
+| ---- | ---- | ---------- |
+| source_id     | str     | 行情柜台ID |
+| account_id     | str     | 账户ID |
+| cash_limit     | float     | 资金限制 |
 
 **返回**
+| 返回   | 类型 | 说明 |
+| ------ | ---- | ---- |
+| result | bool     |      |
 
-无
-
-**输出 ERROR 级别 Log 信息**
-
-**参数**
-
-| 参数 | 类型 | 说明     |
-| ---- | ---- | -------- |
-| msg  | str  | Log 信息 |
-
-**返回**
-
-无
 

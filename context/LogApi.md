@@ -1,4 +1,4 @@
-**设置 Log 级别**
+## 设置 Log 级别<div id='set_log_level'></div>
 
 `context.set_log_level(level)`
 
@@ -12,7 +12,7 @@
 
 无
 
-**输出 INFO 级别 Log 信息**
+## 输出 INFO 级别 Log 信息<div id='log_info'></div>
 
 `context.log_info(msg)`
 
@@ -26,7 +26,7 @@
 
 无
 
-**输出 WARN 级别 Log 信息**
+## 输出 WARN 级别 Log 信息<div id='log_warn'></div>
 
 **参数**
 
@@ -38,7 +38,7 @@
 
 无
 
-**输出 ERROR 级别 Log 信息**
+## 输出 ERROR 级别 Log 信息<div id='log_error'></div>
 
 **参数**
 

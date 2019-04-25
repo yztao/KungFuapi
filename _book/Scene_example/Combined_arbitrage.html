@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>context 提供函数 · GitBook</title>
+        <title>组合套利单交易 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,8 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="customize_combine.html" />
     
-    <link rel="prev" href="../functions/Functions.html" />
+    
+    <link rel="prev" href="customize_callback_order.html" />
     
 
     </head>
@@ -121,9 +123,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../scene_example/Subscribe_MD.html">
+        <li class="chapter " data-level="1.3" data-path="Subscribe_MD.html">
             
-                <a href="../scene_example/Subscribe_MD.html">
+                <a href="Subscribe_MD.html">
             
                     
                     场景示例说明
@@ -135,9 +137,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../scene_example/Subscribe_MD.html">
+        <li class="chapter " data-level="1.3.1" data-path="Subscribe_MD.html">
             
-                <a href="../scene_example/Subscribe_MD.html">
+                <a href="Subscribe_MD.html">
             
                     
                     订阅行情
@@ -148,9 +150,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../scene_example/tick_callback_order.html">
+        <li class="chapter " data-level="1.3.2" data-path="tick_callback_order.html">
             
-                <a href="../scene_example/tick_callback_order.html">
+                <a href="tick_callback_order.html">
             
                     
                     tick行情回调下单
@@ -161,9 +163,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../scene_example/bar_callback_order.html">
+        <li class="chapter " data-level="1.3.3" data-path="bar_callback_order.html">
             
-                <a href="../scene_example/bar_callback_order.html">
+                <a href="bar_callback_order.html">
             
                     
                     bar行情回调下单
@@ -174,9 +176,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../scene_example/customize_callback_order.html">
+        <li class="chapter " data-level="1.3.4" data-path="customize_callback_order.html">
             
-                <a href="../scene_example/customize_callback_order.html">
+                <a href="customize_callback_order.html">
             
                     
                     ⾃定义的回调下单
@@ -187,9 +189,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../scene_example/Combined_arbitrage.html">
+        <li class="chapter active" data-level="1.3.5" data-path="Combined_arbitrage.html">
             
-                <a href="../scene_example/Combined_arbitrage.html">
+                <a href="Combined_arbitrage.html">
             
                     
                     组合套利单交易
@@ -200,9 +202,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../scene_example/customize_combine.html">
+        <li class="chapter " data-level="1.3.6" data-path="customize_combine.html">
             
-                <a href="../scene_example/customize_combine.html">
+                <a href="customize_combine.html">
             
                     
                     自定义组合单示例
@@ -213,9 +215,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="../scene_example/matrix.html">
+        <li class="chapter " data-level="1.3.7" data-path="matrix.html">
             
-                <a href="../scene_example/matrix.html">
+                <a href="matrix.html">
             
                     
                     分钟线⾏情矩阵matrix
@@ -226,9 +228,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="../scene_example/order_book.html">
+        <li class="chapter " data-level="1.3.8" data-path="order_book.html">
             
-                <a href="../scene_example/order_book.html">
+                <a href="order_book.html">
             
                     
                     order_book
@@ -355,9 +357,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="LogApi.html">
+        <li class="chapter " data-level="1.4.2" data-path="../context/LogApi.html">
             
-                <a href="LogApi.html">
+                <a href="../context/LogApi.html">
             
                     
                     context 提供函数
@@ -552,7 +554,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >context 提供函数</a>
+        <a href=".." >组合套利单交易</a>
     </h1>
 </div>
 
@@ -567,88 +569,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><strong>&#x8BBE;&#x7F6E; Log &#x7EA7;&#x522B;</strong></p>
-<p><code>context.set_log_level(level)</code></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>level</td>
-<td>int</td>
-<td>log &#x7EA7;&#x522B;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
-<p><strong>&#x8F93;&#x51FA; INFO &#x7EA7;&#x522B; Log &#x4FE1;&#x606F;</strong></p>
-<p><code>context.log_info(msg)</code></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>msg</td>
-<td>str</td>
-<td>Log &#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
-<p><strong>&#x8F93;&#x51FA; WARN &#x7EA7;&#x522B; Log &#x4FE1;&#x606F;</strong></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>msg</td>
-<td>str</td>
-<td>Log &#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
-<p><strong>&#x8F93;&#x51FA; ERROR &#x7EA7;&#x522B; Log &#x4FE1;&#x606F;</strong></p>
-<p><strong>&#x53C2;&#x6570;</strong></p>
-<table>
-<thead>
-<tr>
-<th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>msg</td>
-<td>str</td>
-<td>Log &#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x8FD4;&#x56DE;</strong></p>
-<p>&#x65E0;</p>
+                                <h1 id="combinedarbitrage">Combined_arbitrage</h1>
 
                                 
                                 </section>
@@ -676,10 +597,14 @@
 
             
                 
-                <a href="../functions/Functions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: on_trade 成交信息更新">
+                <a href="customize_callback_order.html" class="navigation navigation-prev " aria-label="Previous page: ⾃定义的回调下单">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="customize_combine.html" class="navigation navigation-next " aria-label="Next page: 自定义组合单示例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -688,7 +613,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"context 提供函数","level":"1.4.2","depth":2,"next":{"title":"Log 相关函数","level":"1.4.3","depth":2,"ref":"","articles":[]},"previous":{"title":"on_trade 成交信息更新","level":"1.4.1.6","depth":3,"path":"functions/Functions.md","ref":"./functions/Functions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/LogApi.md","mtime":"2019-04-22T01:53:36.011Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-22T06:44:53.446Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"组合套利单交易","level":"1.3.5","depth":2,"next":{"title":"自定义组合单示例","level":"1.3.6","depth":2,"path":"scene_example/customize_combine.md","ref":"./scene_example/customize_combine.md","articles":[]},"previous":{"title":"⾃定义的回调下单","level":"1.3.4","depth":2,"path":"scene_example/customize_callback_order.md","ref":"./scene_example/customize_callback_order.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"scene_example/Combined_arbitrage.md","mtime":"2019-04-11T07:50:13.324Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-22T06:44:53.446Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
