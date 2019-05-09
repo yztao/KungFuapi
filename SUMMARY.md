@@ -1,6 +1,5 @@
 # Summary
 
-- [Introduction](README.md)
 - [Beginner Tutorial](./tutorial/BeginnerTutorial.md)
 
 - 函数定义
